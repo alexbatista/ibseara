@@ -198,7 +198,7 @@ nav ul li a { color: rgba(255, 255, 255, 0.6); display: block; padding: 20px; tr
 nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 255, 255, 1); }
 #nav-toggle { position: absolute; right: 15px; top: 0; }
 #nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { cursor: pointer; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; -o-border-radius: 1px; height: 5px; width: 35px; background: #353535; position: absolute; display: block; content: ''; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { cursor: pointer; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; -o-border-radius: 1px; height: 5px; width: 35px; background: #fff; position: absolute; display: block; content: ''; }
 #nav-toggle span:before { top: -10px; }
 #nav-toggle span:after { bottom: -10px; }
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { transition: all 500ms ease-in-out; -webkit-transition: all 500ms ease-in-out; -moz-transition: all 500ms ease-in-out; -o-transition: all 500ms ease-in-out; }
@@ -218,6 +218,73 @@ Hero
 .hero p { letter-spacing: 1px; }
 .learn-more-btn { background: rgba(61, 201, 179, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #309383; -moz-box-shadow: 0px 3px 0px 0px #309383; box-shadow: 0px 3px 0px 0px #309383; margin: 60px 0 0; font-weight: bold; }
 .learn-more-btn:hover, .learn-more-btn:focus { background: rgba(61, 201, 179, 0.6); color: #fff; }
+
+/*==========================================================================
+HERO VIDEO
+===========================================================================*/
+#homepage-hero{
+	min-height: 100vh;
+}
+#homepage-hero h1{
+	font-size: 4em;
+	color: #fff;
+}
+#homepage-hero h3{
+	font-size: 1em;
+	color: #fff;
+}
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+		padding-top: 60px;
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container .container{
+	position: relative;
+	z-index: 10;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAG0lEQVQIW2NkYGDwYWBg2AKiGRkgACwA4sBlAD5VA5w693VQAAAAAElFTkSuQmCC);*/
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAG0lEQVQIW2NkYGDwYYCALYxQzhYQDeKAAFgWADapApz9MJjFAAAAAElFTkSuQmCC);
+  background-repeat: repeat;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
 /* ==========================================================================
 Intro
 ========================================================================== */
@@ -261,6 +328,42 @@ h1.medium{
 .back-yellow{
   background-color: #ffcc00;
 }
+
+.square.black {
+    border-color: #000;
+}
+.square {
+    border-color: #F5F5F5;
+    border-width: 11px;
+    border-style: solid;
+    max-width: 280px;
+    max-height: 280px;
+    min-width: 250px;
+    min-height: 250px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    padding-left: 33px;
+    padding-right: 33px;
+    z-index: 10;
+}
+.square.black p {
+    color: #000;
+}
+.square .text-right {
+    text-align: center!important;
+    margin-left: 10px;
+}
+.square p {
+		font-family: 'Martel Sans', sans-serif;
+		font-weight: 900;
+    text-transform: uppercase;
+    color: #F5F5F5;
+    font-size: 70px;
+    vertical-align: middle;
+    margin: -15px;
+    padding: 0;
+    line-height: 1.42857143;
+}
 /*=============================================================================
 VOLUNTARIOS
 ==============================================================================*/
@@ -269,6 +372,54 @@ VOLUNTARIOS
 	background: url('../img/voluntarios.JPG') no-repeat center center;
 	background-size: cover;
 }
+/*=============================================================================
+THE CITY
+==============================================================================*/
+.the-city{
+	position: relative;
+	min-height: 100vh;
+	background: url('../img/students3.jpg') no-repeat center center;
+	background-size: cover;
+}
+.the-city h1,.the-city p{
+	position: relative;
+	z-index: 2;
+	color: #fff;
+}
+.the-city .filter{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAG0lEQVQIW2NkYGDwYWBg2AKiGRkgACwA4sBlAD5VA5w693VQAAAAAElFTkSuQmCC);
+  /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAG0lEQVQIW2NkYGDwYYCALYxQzhYQDeKAAFgWADapApz9MJjFAAAAAElFTkSuQmCC);*/
+  background-repeat: repeat;
+}
+/*=============================================================================
+SEMEAR
+==============================================================================*/
+.semear{
+	min-height: 100vh;
+	background: url('../img/hope.JPG') no-repeat center center;
+	background-size: cover;
+}
+.semear h1,.semear p{
+	color: #fff;
+}
+
+/*=============================================================================
+RESUME
+==============================================================================*/
+.resume{
+	min-height: 50vh;
+	background-color: #242830;
+}
+.semear h1,.semear p{
+	color: #fff;
+}
+
 
 /*=============================================================================
 ASSISTA
@@ -305,13 +456,13 @@ UNIAO
 	background: url('../img/uniao.png') no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
-	min-height: 100vh;
+	/*min-height: 100vh;*/
 }
 .uniao h1{
 	margin-top: 40vh;
-	border: 4px solid #fff;
+	border: 4px solid #f70000;
 	padding: 2em;
-	color: #fff;
+	color: #f70000;
 	transition: 0.5s;
 	text-shadow: 0 0 .5em rgba(0,0,0,.8);
 }
@@ -372,6 +523,7 @@ Subscribe
 CTA
 ========================================================================== */
 .ignite-cta { background-color: #242830; padding: 70px 0; }
+.ignite-ctb { background-color: #f3f5f8; padding: 70px 0; }
 .ignite-btn { display: inline-block; padding: 25px 40px; color: #fff; border: solid 1px #fff; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
 .ignite-btn:hover, .ignite-btn:focus { color: #3dc9b3; border: solid 1px #3dc9b3; }
 /* ==========================================================================
