@@ -32,7 +32,11 @@ $(document).ready(function() {
 	}, {
 		offset: '75%'
 	});
-
+	$('.wp7').waypoint(function() {
+		$('.wp7').addClass('animated fadeInUp');
+	}, {
+		offset: '75%'
+	});
 });
 
 /***************** Slide-In Nav ******************/
@@ -139,5 +143,33 @@ $(window).load(function() {
 			$.waypoints('refresh');
 		}
 	});
+	$('#vasSlider').flexslider({
+		animation: "slide",
+		directionNav: false,
+		controlNav: true,
+		touch: true,
+		pauseOnHover: true,
+		start: function() {
+			$.waypoints('refresh');
+		}
+	});
 
+});
+
+/************** parallax effect *********************/
+$(document).ready(function() {
+	$("#vas").parallax({
+	  // calibrateX: false,
+	  // calibrateY: true,
+	  invertX: true,
+	  invertY: true,
+	  limitX: false,
+	  limitY: false,
+	  scalarX: 10,
+	  scalarY: 20,
+	  frictionX: 0.2,
+	  frictionY: 0.8,
+	  originX: 0.0,
+	  originY: 1.0
+	});
 });
