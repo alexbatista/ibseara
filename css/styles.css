@@ -224,6 +224,7 @@ HERO VIDEO
 ===========================================================================*/
 #homepage-hero{
 	min-height: 100vh;
+	text-transform: uppercase;
 }
 #homepage-hero h1{
 	font-size: 4em;
@@ -232,6 +233,13 @@ HERO VIDEO
 #homepage-hero h3{
 	font-size: 1em;
 	color: #fff;
+}
+#homepage-hero ul.social-buttons{
+	padding: 3em;
+}
+#homepage-hero ul.social-buttons li a{
+	background:#fff;
+	color: #242830;
 }
 .homepage-hero-module {
     border-right: none;
@@ -293,6 +301,12 @@ Intro
 .intro p { margin: 50px 0 0; }
 h1.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
 
+/*============================================================================
+ABOUT-US
+=============================================================================*/
+.about-us{
+	min-height: 100vh;
+}
 /*=============================================================================
 CG
 ===============================================================================*/
@@ -323,6 +337,10 @@ h1.big{
 }
 h1.medium{
 	font-size: 4em;
+}
+h1.white{
+	color: #fff;
+	font-weight: 800;
 }
 
 .back-yellow{
@@ -368,9 +386,18 @@ h1.medium{
 VOLUNTARIOS
 ==============================================================================*/
 .voluntarios{
-	min-height: 100vh;
-	background: url('../img/voluntarios.JPG') no-repeat center center;
+	min-height: 60vh;
+	background: url('../img/voluntarios2.jpg') no-repeat center center;
 	background-size: cover;
+	background-attachment: fixed;
+}
+.voluntarios h1{
+	color: #fff;
+}
+.voluntarios blockquote{
+	font-size: 1.4em;
+	color: #fff;
+	font-style: italic;
 }
 /*=============================================================================
 THE CITY
@@ -378,8 +405,9 @@ THE CITY
 .the-city{
 	position: relative;
 	min-height: 100vh;
-	background: url('../img/students3.jpg') no-repeat center center;
+	background: url('../img/students.jpg') no-repeat center center;
 	background-size: cover;
+	background-attachment: fixed;
 }
 .the-city h1,.the-city p{
 	position: relative;
@@ -402,11 +430,15 @@ SEMEAR
 ==============================================================================*/
 .semear{
 	min-height: 100vh;
-	background: url('../img/hope.JPG') no-repeat center center;
+	background: url('../img/semear.jpg') no-repeat center center;
 	background-size: cover;
 }
 .semear h1,.semear p{
 	color: #fff;
+}
+.semear p{
+	text-align: justify;
+	font-size: 1.3em;
 }
 
 /*=============================================================================
@@ -427,6 +459,7 @@ ASSISTA
 .assista{
 	background: url('../img/culto1.jpg') no-repeat center center;
 	background-size: cover;
+	background-attachment: fixed;
 	min-height: 100vh;
 }
 .assista h1{
@@ -569,4 +602,5 @@ Waypoints
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
 .delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
 .delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
+.delay-2s { animation-delay: 2s; -webkit-animation-delay: 2s; }
 .wp3 { background: url('../img/vas.png') no-repeat center center; background-position: 200px 10px; height: 100%; }
