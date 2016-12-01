@@ -304,18 +304,28 @@ h1.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-sp
 /*============================================================================
 ABOUT-US
 =============================================================================*/
-.about-us{
-	min-height: 100vh;
+.about-us .row{
+	/*min-height: 100vh;*/
+	display: flex;
+	align-items: center;
 }
+
 /*=============================================================================
 CG
 ===============================================================================*/
-.cg{
+.gc{
   position: relative;
   background-color: #f3f5f8;
   min-height: 100vh;
+	display: flex;
+	align-items: center;
 }
-.cg::after{
+.gc .container{
+	position: relative;
+	z-index: 2;
+}
+
+.gc::after{
   position: absolute;
   top: 0;
   left: 0;
@@ -400,19 +410,42 @@ VOLUNTARIOS
 	font-style: italic;
 }
 /*=============================================================================
+HOPE
+==============================================================================*/
+.hope{
+	/*min-height: 100vh;*/
+	background-color: #f3f5f8;
+	/*background: url('../img/hope.jpg') no-repeat center center;*/
+	background-size: cover;
+	/*background-attachment: fixed;*/
+}
+.hope p{
+	font-size: 1.3em;
+}
+/*=============================================================================
 THE CITY
 ==============================================================================*/
 .the-city{
 	position: relative;
 	min-height: 100vh;
-	background: url('../img/students.jpg') no-repeat center center;
+	background: url('../img/students2.jpg') no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 }
-.the-city h1,.the-city p{
+.the-city h1,.the-city p,.the-city h2{
 	position: relative;
 	z-index: 2;
 	color: #fff;
+}
+.the-city h2{
+	font-size: 20px;
+}
+.the-city h2::after {
+    width: 180px;
+    margin: 10px auto;
+}
+.the-city p{
+	font-size: 1.3em;
 }
 .the-city .filter{
   position: absolute;
@@ -446,7 +479,16 @@ RESUME
 ==============================================================================*/
 .resume{
 	min-height: 50vh;
-	background-color: #242830;
+	background-color: #f3f5f8;
+	/*background-color: #242830;*/
+}
+.resume .row{
+	display: flex;
+	align-items: center;
+}
+.resume img{
+	display: block;
+	margin: 0 auto;
 }
 .semear h1,.semear p{
 	color: #fff;
