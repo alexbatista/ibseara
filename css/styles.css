@@ -225,6 +225,7 @@ HERO VIDEO
 #homepage-hero{
 	min-height: 100vh;
 	text-transform: uppercase;
+	background: #000;
 }
 #homepage-hero h1{
 	font-size: 4em;
@@ -267,7 +268,6 @@ HERO VIDEO
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    background: #000;
 }
 
 .video-container .container{
@@ -311,8 +311,8 @@ ABOUT-US
 =============================================================================*/
 .about-us .row{
 	/*min-height: 100vh;*/
-	display: flex;
-	align-items: center;
+	/*display: flex;
+	align-items: center;*/
 }
 
 /*=============================================================================
@@ -344,7 +344,11 @@ CG
   min-height: 570px;
 	z-index: 0;
 }
-
+.gc .ignite-btn{
+	color: #000;
+	border-color: #000;
+	display: block;
+}
 h1.big{
   font-size: 10em;
   padding: 0;
@@ -414,6 +418,12 @@ VOLUNTARIOS
 	color: #fff;
 	font-style: italic;
 }
+.voluntarios .ignite-btn{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+}
 /*=============================================================================
 HOPE
 ==============================================================================*/
@@ -423,6 +433,11 @@ HOPE
 	/*background: url('../img/hope.jpg') no-repeat center center;*/
 	background-size: cover;
 	/*background-attachment: fixed;*/
+}
+.hope img{
+	display: block;
+	margin: 1em auto;
+	width: 80%;
 }
 .hope p{
 	font-size: 1.3em;
@@ -436,21 +451,37 @@ THE CITY
 	background: url('../img/students2.jpg') no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
+	display: flex;
+	align-items: center;
 }
-.the-city h1,.the-city p,.the-city h2{
+.the-city h1,.the-city p,.the-city h2, .the-city a{
 	position: relative;
 	z-index: 2;
 	color: #fff;
 }
 .the-city h2{
+	margin-top: 2em;
 	font-size: 20px;
 }
 .the-city h2::after {
-    width: 180px;
-    margin: 10px auto;
+    /*width: 180px;*/
+    /*margin: 10px auto;*/
+		border: none;
 }
 .the-city p{
 	font-size: 1.3em;
+}
+.the-city a{
+	display: block;
+	margin: 1em auto;
+	text-align: center;
+}
+.the-city img{
+	display: block;
+	margin: 1em auto;
+	position: relative;
+	z-index: 2;
+	width: 100%;
 }
 .the-city .filter{
   position: absolute;
@@ -470,6 +501,8 @@ SEMEAR
 	min-height: 100vh;
 	background: url('../img/semear.jpg') no-repeat center center;
 	background-size: cover;
+	display: flex;
+	align-items: center;
 }
 .semear h1,.semear p{
 	color: #fff;
@@ -477,6 +510,16 @@ SEMEAR
 .semear p{
 	text-align: justify;
 	font-size: 1.3em;
+}
+.semear img{
+	display: block;
+	margin: 0 auto;
+}
+.semear a{
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	text-align: center;
 }
 
 /*=============================================================================
