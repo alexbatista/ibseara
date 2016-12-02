@@ -157,36 +157,36 @@ $(window).load(function() {
 });
 
 /************** parallax effect *********************/
-$(document).ready(function() {
-	$("#vas").parallax({
-	  // calibrateX: false,
-	  // calibrateY: true,
-	  invertX: true,
-	  invertY: true,
-	  limitX: false,
-	  limitY: false,
-	  scalarX: 10,
-	  scalarY: 20,
-	  frictionX: 0.2,
-	  frictionY: 0.8,
-	  originX: 0.0,
-	  originY: 1.0
-	});
-	$("#hope").parallax({
-	  // calibrateX: false,
-	  // calibrateY: true,
-	  invertX: true,
-	  invertY: true,
-	  limitX: false,
-	  limitY: false,
-	  scalarX: 10,
-	  scalarY: 20,
-	  frictionX: 0.2,
-	  frictionY: 0.8,
-	  originX: 0.0,
-	  originY: 1.0
-	});
-});
+// $(document).ready(function() {
+// 	$("#vas").parallax({
+// 	  // calibrateX: false,
+// 	  // calibrateY: true,
+// 	  invertX: true,
+// 	  invertY: true,
+// 	  limitX: false,
+// 	  limitY: false,
+// 	  scalarX: 10,
+// 	  scalarY: 20,
+// 	  frictionX: 0.2,
+// 	  frictionY: 0.8,
+// 	  originX: 0.0,
+// 	  originY: 1.0
+// 	});
+// 	$("#hope").parallax({
+// 	  // calibrateX: false,
+// 	  // calibrateY: true,
+// 	  invertX: true,
+// 	  invertY: true,
+// 	  limitX: false,
+// 	  limitY: false,
+// 	  scalarX: 10,
+// 	  scalarY: 20,
+// 	  frictionX: 0.2,
+// 	  frictionY: 0.8,
+// 	  originX: 0.0,
+// 	  originY: 1.0
+// 	});
+// });
 
 $('section.bgParallax').each(function(){
 	var $obj = $(this);

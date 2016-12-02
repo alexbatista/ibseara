@@ -56,4 +56,8 @@
 	.gc::after{
 		opacity: 0.4;
 	}
+	.team .team-back{
+		background: none;
+		min-height: auto;
+	}
 }
