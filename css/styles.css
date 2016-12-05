@@ -693,3 +693,65 @@ Waypoints
 .delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
 .delay-2s { animation-delay: 2s; -webkit-animation-delay: 2s; }
 .wp3 { background: url('../img/vas.png') no-repeat center center; background-position: 200px 10px; height: 100%; }
+
+
+/*==============================================================================
+PAGE VOLUNTARIOS
+==============================================================================*/
+.form-contato{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+.form-contato h1 { color: #fff; margin-bottom: 40px; }
+.form-contato h1 span { display: block; font-size: 15px; text-transform: uppercase; font-weight: bold; margin-top: 20px; letter-spacing: 1px; }
+.form-contato label{padding-top: 0.4em;}
+.form-contato input { display: block; background-color: rgba(0, 0, 0, 0.1); border: solid 1px #f3f5f8; padding: 20px; width: 100%; color: #000; }
+.form-contato input[type=submit] { background: rgba(61, 201, 179, 0.5); border: solid 1px rgba(61, 201, 179, 0.5); margin-top: 1em; padding: 20px; color: #f3f5f8; text-transform: uppercase; letter-spacing: 1px; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
+.form-contato input[type=submit]:hover { background: rgba(61, 201, 179, 1); border: solid 1px rgba(61, 201, 179, 1); color: #fff; }
+.form-contato form{
+	padding: 2em;
+	padding-bottom: 4em;
+}
+
+/*NAV TO PAGES EXCEPT INDEX*/
+#nav-pages {
+    cursor: pointer;
+    padding: 22px 35px 16px 0px;
+		color: #fff;
+		font-size: 1.3em;
+}
+#nav-pages:hover{
+	color: #3dc9b3;
+}
+#nav-pages {
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+/*=============================================================================
+PAGE DOACÃO
+===============================================================================*/
+.doacao{
+	min-height: 60vh;
+	background: url('../img/semear.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+}
+
+/*=============================================================================
+PAGE GC
+===============================================================================*/
+.gc-page{
+	min-height: 60vh;
+	background: url('../img/gc.jpeg') no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.gc.no-back h2{
+	font-size: 4em;
+	word-break: break-all;
+}
