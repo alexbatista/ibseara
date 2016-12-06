@@ -37,6 +37,92 @@ $(document).ready(function() {
 	}, {
 		offset: '75%'
 	});
+	$('.wp8').waypoint(function() {
+		$('.wp8').addClass('animated fadeInLeft');
+	}, {
+		offset: '50%'
+	});
+	$('.wp9').waypoint(function() {
+		$('.wp9').addClass('animated fadeInRight');
+	}, {
+		offset: '50%'
+	});
+	$('.wp10').waypoint(function() {
+		$('.wp10').addClass('animated fadeInUp');
+	}, {
+		offset: '50%'
+	});
+	$('.wp11').waypoint(function() {
+		$('.wp11').addClass('animated fadeInLeft');
+	}, {
+		offset: '50%'
+	});
+	$('.wp12').waypoint(function() {
+		$('.wp12').addClass('animated fadeInRight');
+	}, {
+		offset: '50%'
+	});
+	$('.wp13').waypoint(function() {
+		$('.wp13').addClass('animated fadeInUp');
+	}, {
+		offset: '50%'
+	});
+	$('.wp14').waypoint(function() {
+		$('.wp14').addClass('animated fadeInDown');
+	}, {
+		offset: '50%'
+	});
+	$('.wp15').waypoint(function() {
+		$('.wp15').addClass('animated fadeInUp');
+	}, {
+		offset: '50%'
+	});
+	$('.wp16').waypoint(function() {
+		$('.wp16').addClass('animated fadeInDown');
+	}, {
+		offset: '50%'
+	});
+	$('.wp17').waypoint(function() {
+		$('.wp17').addClass('animated fadeInUp');
+	}, {
+		offset: '75%'
+	});
+	$('.wp18').waypoint(function() {
+		$('.wp18').addClass('animated fadeInLeft');
+	}, {
+		offset: '50%'
+	});
+	$('.wp19').waypoint(function() {
+		$('.wp19').addClass('animated fadeInRight');
+	}, {
+		offset: '50%'
+	});
+	$('.wp20').waypoint(function() {
+		$('.wp20').addClass('animated fadeInUp');
+	}, {
+		offset: '50%'
+	});
+	$('.wp21').waypoint(function() {
+		$('.wp21').addClass('animated fadeInUp');
+	}, {
+		offset: '50%'
+	});
+	$('.wp22').waypoint(function() {
+		$('.wp22').addClass('animated fadeInDown');
+	}, {
+		offset: '50%'
+	});
+	$('.wp23').waypoint(function() {
+		$('.wp23').addClass('animated fadeInLeft');
+	}, {
+		offset: '50%'
+	});
+	$('.wp24').waypoint(function() {
+		$('.wp24').addClass('animated fadeInRight');
+	}, {
+		offset: '50%'
+	});
+
 });
 
 /***************** Slide-In Nav ******************/
