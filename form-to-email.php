@@ -11,7 +11,7 @@ $bairro = $_POST['bairro'];
 $telefone1 = $_POST['telefone1'];
 $telefone2 = $_POST['telefone2'];
 $visitor_email = $_POST['email'];
-$message = $_POST['message'];
+// $message = $_POST['message'];
 
 //Validate first
 if(empty($name)||empty($visitor_email))
@@ -26,17 +26,16 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'tom@amazing-designs.com';//<== update the email address
+$email_from = "contato@lugarderecomecos.com.br";//<== update the email address
 // $email_subject = "New Form submission";
 $email_body = "Dados do contato:\n Nome:$name\n".
     "Endereço: $endereco\n".
     "Bairro: $bairro\n".
     "Telefone1: $telefone1\n".
     "Telefone2: $telefone2\n".
-    "Email: $visitor_email\n".
-    "Here is the message:\n $message";
+    "Email: $visitor_email\n";
 
-$to = "tom@amazing-designs.com";//<== update the email address
+$to = "contato@lugarderecomecos.com.br";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
